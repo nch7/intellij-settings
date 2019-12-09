@@ -1,0 +1,42 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <ignoreFiles list="*.hprof;*.pyc;*.pyo;*.rbc;*.yarb;*~;.DS_Store;.git;.hg;.svn;CVS;__pycache__;_svn;promo-code;vssver.scc;vssver2.scc;" />
+    <extensionMap>
+      <mapping pattern="*-*.js" type="JavaScript" />
+      <mapping pattern="lambda" type="JavaScript" />
+      <mapping pattern=".gitginore" type="PLAIN_TEXT" />
+      <mapping pattern="as3" type="PLAIN_TEXT" />
+      <mapping pattern="as" type="PLAIN_TEXT" />
+      <mapping pattern="test.md" type="PLAIN_TEXT" />
+      <mapping pattern="WAj2g5Y3w-59LyYXiH0k4mIm-0a9v2FY5IjGJIdRRXs" type="PLAIN_TEXT" />
+      <mapping pattern="bucket-policy" type="PLAIN_TEXT" />
+      <mapping pattern="text3" type="PLAIN_TEXT" />
+      <mapping pattern="text2" type="PLAIN_TEXT" />
+      <mapping pattern="Procfile" type="PLAIN_TEXT" />
+      <mapping pattern=".env.example" type="PLAIN_TEXT" />
+      <mapping pattern="as8" type="PLAIN_TEXT" />
+      <mapping pattern="as7" type="PLAIN_TEXT" />
+      <mapping pattern="as6" type="PLAIN_TEXT" />
+      <mapping pattern="as5" type="PLAIN_TEXT" />
+      <mapping pattern="as4" type="PLAIN_TEXT" />
+      <mapping pattern="CTh-TSvXUiRY-e23Y9jsXUE5sTmYP0lhFvEGIVvTsEU" type="PLAIN_TEXT" />
+      <mapping pattern="as2" type="PLAIN_TEXT" />
+      <mapping pattern="X4u4CZEPIrzMP5kl0aFVZjcMqa14HXOfVmsdkSzl6hE" type="PLAIN_TEXT" />
+      <mapping pattern="test" type="PLAIN_TEXT" />
+      <mapping pattern=".dockerignore" type="PLAIN_TEXT" />
+      <mapping pattern="indexes" type="PLAIN_TEXT" />
+      <mapping pattern="eNNffINGP4uaYf59qkbl-hFmxoY9yUOYSo-HKLUsXCg" type="PLAIN_TEXT" />
+      <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
+      <mapping pattern="Vagrantfile" type="PLAIN_TEXT" />
+      <mapping ext="csv" type="PLAIN_TEXT" />
+      <mapping ext="wt" type="PLAIN_TEXT" />
+      <mapping ext="prod" type="PLAIN_TEXT" />
+      <mapping ext="enc" type="PLAIN_TEXT" />
+      <mapping ext="mid" type="PLAIN_TEXT" />
+      <mapping ext="dev" type="PLAIN_TEXT" />
+      <mapping ext="lock" type="PLAIN_TEXT" />
+      <mapping pattern="companyService" type="TypeScript" />
+      <mapping pattern="getClonedNameFromRequest" type="TypeScript" />
+    </extensionMap>
+  </component>
+</application>

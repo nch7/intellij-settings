@@ -1,0 +1,11 @@
+<application>
+  <component name="PathMacrosImpl">
+    <macro name="COMPASS_EXE_PATH" value="compass" />
+    <macro name="COMPASS_IMPORT_PATH" value="/var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets" />
+    <macro name="WGET_EXE_PATH" value="/usr/bin/wget" />
+    <ignoredMacro name="MESSAGE" />
+    <ignoredMacro name="FILE_PATH" />
+    <ignoredMacro name="LINE" />
+    <ignoredMacro name="COLUMN" />
+  </component>
+</application>

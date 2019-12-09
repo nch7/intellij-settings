@@ -1,0 +1,195 @@
+<templateSet group="Zipier">
+  <template name="alert" value="alert($SELECTION$$END$);" description="Insert alert();" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP String Literal" value="true" />
+    </context>
+  </template>
+  <template name="brkdoubles" value="&quot; . $SELECTION$$END$ . &quot;" description="Escape double quotes" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="codeCoverageIgnore" value="// @codeCoverageIgnoreStart&#10;$SELECTION$$END$&#10;// @codeCoverageIgnoreEnd" description="Inserts  // @codeCoverageIgnoreStart and // @codeCoverageIgnoreEnd" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ddump" value="echo date(&quot;Y-m-d&quot;, $SELECTION$$END$) . &quot;&lt;br&gt;&quot;;" description="Prints a unix timestamp in a YYYY-MM-DD format." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="debugLogFile" value="file_put_contents('/tmp/log.txt', $SELECTION$$END$ . &quot; &quot; . __FILE__ . &quot; &quot; . __LINE__ . &quot;\n&quot;, FILE_APPEND);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="docready" value="$(document).ready(function() {&#10;    $SELECTION$$END$&#10;});" description="Inserts jQuery document.ready" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="eco\n" value="echo $END$ . &quot;\n&quot;;" description="Insert echo statement with \n" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="eco\ns" value="echo &quot;\n\n\n\n\n\n&quot;;" description="Inserts lots of \n s" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ecobr" value="echo $END$ . &quot;&lt;br&gt;&quot;;" description="Insert echo statement with &lt;br&gt;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ecobrs" value="echo &quot;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&quot;;" description="Inserts lots of &lt;br&gt;s" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ecopr" value="echo &quot;&lt;pre&gt;$END$&lt;/pre&gt;&quot;;" description="Insert echo statement with pre tags" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="formatter" value="// @formatter:off&#10;$SELECTION$$END$&#10;// @formatter:on" description="Inserts // @formatter:off and // @formatter:on" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="iter" value="for ($ITERABLE$ = 0; $ITERABLE$ &lt; $NUMITERATIONS$; $ITERABLE$++) {&#10;    $SELECTION$$END$&#10;}" description="Inserts for loop." toReformat="false" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NUMITERATIONS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ln" value="echo __LINE__ . &quot;&lt;br&gt;&quot;;" description="Prints line number, usefull for debugging." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="logconsole" value="console.log($SELECTION$$END$);" description="Insert console.log();" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="logFile" value="file_put_contents('/tmp/log.txt', $SELECTION$$END$);" description="Inserts a file_put_contents command pointing to /tmp/log.txt" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="lorem" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&#10;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&#10;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&#10;consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&#10;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&#10;proident, sunt in culpa qui officia deserunt mollit anim id est laborum." description="Adds a paragraph of lorem ipsum text" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ob_start" value="ob_start();&#10;{&#10;    $SELECTION$$END$&#10;    $VAR$ = ob_get_contents();&#10;    ob_end_clean();&#10;}" description="Inserts an ob_start() outtput capture" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="p=" value="&lt;?=$SELECTION$$END$?&gt;" description="&lt;?=...?&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="requiremod" value="require '/mnt/ebs1/git/apps/mod/$END$';" description="Insert require statement with path pointing to /mod/" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="roundDec" value="round($SELECTION$$END$, 2)" description="Insert round(, 2)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="rprint" value="print_r($SELECTION$$END$);" description="Insert print_r();" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="setTimeout" value="setTimeout(function() {&#10;    $SELECTION$&#10;}, $END$);" description="Inserts setTimeout." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="tdump" value="echo strftime(&quot;(%Y-%m-%d) %A, %e %B %Y %r&quot;, $SELECTION$$END$) . &quot;&lt;br&gt;&quot;;" description="Prints a unix timestamp in a human readable format." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="trace" value="var_dump(debug_backtrace(false));" description="var_dumps a backtrace." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="unset" value="unset($SELECTION$$END$);" description="Inserts a unset();" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="vd" value="var_dump($SELECTION$$END$);" description="Insert var_dump();" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="CallingCode" value="(new \Form\Row([&#10;    new \Form\CallingCode([&#10;        'name'      =&gt; '$SELECTION$$END$',&#10;    ]),&#10;]))-&gt;html();&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Checkbox" value="(new \Form\Row([&#10;    new \Form\Checkbox([&#10;        'name' =&gt; '$SELECTION$$END$',&#10;    ]),&#10;]))-&gt;html();&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Date" value="(new \Form\Row([&#10;    new \Form\Date([&#10;        'name'      =&gt; '$SELECTION$$END$',&#10;    ]),&#10;]))-&gt;html();&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Html" value="(new \Form\Row([&#10;    new \Form\Html([&#10;        'showParent' =&gt; true,&#10;        'html'       =&gt; $SELECTION$$END$,&#10;    ]),&#10;]))-&gt;html();&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input" value="(new \Form\Row([&#10;    new \Form\Input([&#10;        'name'      =&gt; '$SELECTION$$END$',&#10;    ]),&#10;]))-&gt;html();&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="php" value="&lt;?&#10;$SELECTION$$END$&#10;?&gt;" description="&lt;?...?&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="quickHelp" value="(new \Form\Row(['quickHelp' =&gt; $SELECTION$$END$]))-&gt;html();&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Select" value="(new \Form\Row([&#10;    new \Form\Select([&#10;        'name'       =&gt; '$SELECTION$$END$',&#10;        'blankValue' =&gt; false,&#10;        'rs'         =&gt; [&#10;            ['val 1', 'Label 2'],&#10;            ['val 2', 'Label 2'],&#10;        ],&#10;    ]),&#10;]))-&gt;html();&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="subheading" value="(new \Form\Row(['subheading' =&gt; $SELECTION$$END$]))-&gt;html();&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
